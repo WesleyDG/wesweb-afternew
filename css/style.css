@@ -167,6 +167,7 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .about .paragraph {
   text-align: justify;
 }
@@ -270,7 +271,28 @@ hr {
 .timeline-block {
   position: relative;
   padding-left: 30px;
+  cursor: zoom-in;
+  transition-duration: 2s;
 }
+
+.timeline-block.show {
+  cursor: zoom-out;
+}
+
+.timeline-block ul {
+  transform: translateY(-10%);
+  opacity: 0;
+  transition-duration: 0s;
+  height: 0;
+}
+
+.show ul {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  height: auto;
+}
+
 .timeline-block:not(:last-of-type) {
   margin-bottom: 1rem;
 }
@@ -462,7 +484,6 @@ hr {
   display: flex;
   flex: 1 0 0;
   align-items: center;
-  justify-content: baseline;
   flex-direction: column;
   color: var(--profile-theme);
   padding: 1rem 0;

@@ -6,7 +6,6 @@ window.addEventListener("load", function () {
     );
 });
 
-// document.querySelectorAll(".timeline-block").onclick = function() {show(this);};
 document.querySelectorAll(".timeline-block").forEach((block) => {
         block.addEventListener("click", (event) => {
             show(block);
