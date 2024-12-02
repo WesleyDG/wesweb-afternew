@@ -176,6 +176,7 @@ hr {
 
 .about .paragraph {
   text-align: justify;
+  user-select: auto!important;
 }
 
 .cv .link{
