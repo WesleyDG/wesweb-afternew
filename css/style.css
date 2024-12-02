@@ -161,6 +161,12 @@ hr {
   padding: 0 1rem;
   color: var(--color-gray-dark-1);
 }
+
+.intro-section a{
+  color: var(--color-gray-dark-1);
+  text-decoration: none;
+}
+
 .intro-section .title {
   font-size: 1rem;
   font-weight: bold;
@@ -171,6 +177,19 @@ hr {
 .about .paragraph {
   text-align: justify;
 }
+
+.cv .link{
+  border: 3px solid var(--profile-theme);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 3rem 0px;
+  color: #eee;
+}
+
+.cv .link span:hover{
+  color: #eee;
+}
+
 .info-section {
   margin: 1rem 0;
 }
