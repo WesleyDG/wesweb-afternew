@@ -185,6 +185,8 @@ hr {
   border-radius: 10px;
   margin: 3rem 0px;
   color: #eee;
+  text-align: center;
+  font-size: large;
 }
 
 .cv .link span:hover{
