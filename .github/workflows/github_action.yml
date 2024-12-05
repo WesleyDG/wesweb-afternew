@@ -2,7 +2,7 @@ name: Déployer mon site sur OVH
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   deploy:
