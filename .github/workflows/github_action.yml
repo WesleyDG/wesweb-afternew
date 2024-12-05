@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout du code source
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
       - name: Déployer via FTP
-        uses: SamKirkland/ftp-deploy@latest
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           user: ${{ secrets.FTP_USER }}
