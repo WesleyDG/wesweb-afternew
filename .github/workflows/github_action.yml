@@ -1,1 +1,18 @@
+name: Déployer mon site sur OVH
 
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    steps:
+      - name: Checkout du code source
+        uses: actions/checkout@latest
+      - name: Déployer via FTP
+        uses: SamKirkland/ftp-deploy@latest
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          remotedir: /www/site
